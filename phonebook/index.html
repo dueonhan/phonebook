@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="./index.css">
+
+</head>
+<body>
+	<div id="wrap">
+		<div id="left_menu">
+			<input type="text" id="input_num" value="" maxlength="13">
+			<div id="number_line" >
+				
+				<div class="number_btn" >1</div>
+				<div class="number_btn" >2</div>
+				<div class="number_btn" >3</div>
+				<div class="number_btn" >4</div>
+				<div class="number_btn" >5</div>
+				<div class="number_btn" >6</div>
+				<div class="number_btn" >7</div>
+				<div class="number_btn" >8</div>
+				<div class="number_btn" >9</div>
+				<div class="number_btn" >*</div>
+				<div class="number_btn" >0</div>
+				<div class="number_btn" >#</div>
+				<div class="number_btn" id="none_btn" ></div>
+				<div class="number_btn" id="plus_btn" ><a href="#open" onclick="phone_number_send()" >+</a> </div>
+				<div class="number_btn" id="delete_btn" >🔚</div>
+				
+			</div>
+		</div>
+		<div id="right_menu">
+			<div class="number_list" id="number_list">
+				<!--<div class="member">
+					<p class="member_a_name"> 홍길동 </p>
+				</div>
+				-->
+			</div>
+		</div>
+	</div>
+	
+	<!-- modal -->
+	<div class="white_content" id="open">
+        <div>
+            <div id="modal_header">전화번호 등록</div>
+            <div id="modal_contents">
+            	<form name="frm" >
+	            	<input type="text" name="people_name" id="people_name" class="modal_input" value="" placeholder="이름" > 
+	            	<input type="text" name="phone_number" id="phone_number" class="modal_input" value="" placeholder="핸드폰번호" > 
+	            	<input type="text" name="home_number" id="home_number" class="modal_input" value="" placeholder="전화번호" >
+	            	<input type="text" name="email" id="email" value="" class="modal_input" placeholder="이메일" > 
+	            	<input type="hidden" name="modify_num" val=''>
+            	</form>
+            </div>
+            <div id="modal_footer">
+            	<button class="close_btn"><a href="#close">취소</a> </button>
+            	<button class="write_btn" id="write_btn" onclick="phoneBook_Write()">등록</button>
+            	<button class="modify_btn" id="modify_btn" onclick="phoneBook_Modify()">수정</button>
+            </div>            
+        </div>
+    </div>
+    <!-- //modal -->
+
+
+
+</body>
+<script src="./DATA.js"></script>
+<script src="./index.js"></script>
+<script>
+
+</script>
+</html>
+
+
+
+
+
+
+
+
+

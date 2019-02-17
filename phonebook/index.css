@@ -1,0 +1,159 @@
+body{
+	padding: 0;
+	margin: 0;
+}
+#wrap{
+	width:99%;
+	height: 100vh;
+	
+}
+/* left menu start */
+#left_menu{
+	width : 49%;
+	height: 100%;
+	float: left;
+	
+}
+
+#input_num{
+	width:100%;
+	height:15%;
+	border : 0;
+	font-weight: bold;
+	font-size: 36px;
+	text-align: center;
+	border-bottom: 1px solid #ccc;	
+
+}
+
+.number_btn{
+	width: 25%;
+	height: 25%;
+	margin : 3px 6% 5px 0;
+	display: inline-block;
+	text-align: center;
+	border-radius: 50%;
+	background-color: #dee2e6;
+	line-height: 120px;
+	font-weight: bold;
+	font-size: 30px;
+	overflow: hidden;
+
+}
+
+
+#number_line{
+	margin-top:20px;
+	margin-left:5%;
+	margin-right: 5%:;
+}
+
+#none_btn{
+	background-color: white;
+}
+
+#delete_btn{
+	display: none;
+}
+#plus_btn a{
+	text-decoration:none;
+	color: black;
+	padding: 30px;
+
+}
+/* //left menu end */
+
+/* right menu start */
+
+#right_menu{
+	width : 50%;
+	height: 100%;
+	border : 1px solid #ccc;
+	float: left;
+	overflow-y:scroll;
+}
+
+.member_a_name{
+	margin: 0;
+	padding : 10px 10px;
+	font-size: 24px;
+	color: #1c7ed6;
+	border-bottom: 1px solid #ccc;
+}	
+
+/* //right menu end */		
+
+/* --modal start--*/
+
+.white_content {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+
+}
+.white_content:target {
+    opacity:1;
+    pointer-events: auto;
+}
+.white_content > div {
+	position: absolute;
+	top: 25%;
+	left: 25%;
+	width: 50%;
+	height: 50%;
+	border: 1px solid #ccc;
+	background-color: white;
+	overflow: auto;	
+}
+
+#modal_header{
+	background-color: #868e96;
+	width:100%;
+	height: 20%;
+	font-size: 36px;
+	line-height: 80px;
+	color: white;
+	opacity: 0.6;
+	text-align: center;
+}
+
+.modal_input{
+	width:100%;
+	height:60px;
+}
+
+.close_btn a{
+	text-decoration: none;
+	color: white;
+}
+
+.close_btn{
+	width: 50px;
+	background-color: #495057;
+	
+}
+.write_btn{
+	width: 50px;	
+	background-color: #f8f9fa;
+}
+
+.modify_btn{
+	width: 50px;	
+	background-color: #f8f9fa;	
+}
+
+#modal_footer{
+	float:right;
+	margin-right: 10px;
+	margin-top: 20px;
+}
+
+/* --modal end --*/
